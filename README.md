@@ -2,7 +2,8 @@
 
 Website for **Make IAS**, a learning platform for IAS/UPSC aspirants. Built with React, Vite, and Tailwind CSS.
 
-**Live site:** [https://dinesh140499.github.io/make-ias/](https://dinesh140499.github.io/make-ias/)
+**Live site:** [https://makeias.iqsetters.com/]([https://dinesh140499.github.io/make-ias/])
+**Dummy Site:** [https://dinesh140499.github.io/make-ias/](https://dinesh140499.github.io/make-ias/)
 
 ---
 
