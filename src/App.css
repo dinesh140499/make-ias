@@ -1,0 +1,240 @@
+html {
+    scroll-behavior: smooth
+}
+
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Nunito-Sans';
+    src: url('../src/assets/fonts/nunito_sans/static/NunitoSans_10pt-Light.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito-Sans';
+    src: url('../src/assets/fonts/nunito_sans/static/NunitoSans_10pt-Bold.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito-Sans';
+    src: url('../src/assets/fonts/nunito_sans/static/NunitoSans_10pt-ExtraBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../src/assets/fonts/inter/static/Inter_18pt-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../src/assets/fonts/inter/static/Inter_18pt-Light.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --theme-bg-red: #DB251B;
+    --theme-bg-black: #272425;
+    --theme-bg-green: #26AA39;
+    --theme-bg-golden: linear-gradient(90deg, #E7B619, #FFDE64, #DCAE1A, #F9F180);
+    --theme-bg-lightred: #FFF5F5;
+    --theme-bg-white: #FFFFFF;
+    --theme-bg-grey: #F9F9F9;
+
+    --theme-para-grey: #585858;
+
+    --radius1: 30px;
+    --radius2: 7px;
+
+    --font13: 13px;
+    --font14: 14px;
+    --font15: 15px;
+    --font16: 16px;
+    --font20: 20px;
+    --font22: 22px;
+
+    --heading-font: Nunito-Sans;
+    --para-font: Inter;
+}
+
+body {
+    font-family: var(--para-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+}
+
+p {
+    font-family: var(--para-font);
+    font-weight: 500;
+}
+
+
+/* Theme Setup Start */
+
+section {
+    padding: 50px 0;
+}
+
+.theme-bg-red {
+    background-color: var(--theme-bg-red);
+}
+
+.theme-bg-black {
+    background-color: var(--theme-bg-black);
+}
+
+.theme-bg-green {
+    background-color: var(--theme-bg-green);
+}
+
+.theme-bg-golden {
+    background: var(--theme-bg-golden);
+}
+
+.theme-bg-white {
+    background-color: var(--theme-bg-white);
+}
+
+.theme-bg-grey {
+    background-color: var(--theme-bg-grey);
+}
+
+.theme-bg-lightred {
+    background-color: var(--theme-bg-lightred);
+}
+
+.theme-text-red {
+    color: var(--theme-bg-red);
+}
+
+.theme-text-black {
+    color: var(--theme-bg-black);
+}
+
+.theme-text-green {
+    color: var(--theme-bg-green);
+}
+
+.theme-para-grey {
+    color: var(--theme-para-grey);
+}
+
+
+.radius30 {
+    border-radius: var(--radius1);
+}
+
+.radius7 {
+    border-radius: var(--radius2);
+}
+
+.font13 {
+    font-size: var(--font13);
+}
+
+.font14 {
+    font-size: var(--font14);
+}
+
+.font15 {
+    font-size: var(--font15);
+}
+
+.font16 {
+    font-size: var(--font16);
+}
+
+.font20 {
+    font-size: var(--font20);
+}
+
+.font22 {
+    font-size: var(--font22);
+}
+
+.container90 {
+    max-width: 90%;
+    margin: auto;
+}
+
+.container95 {
+    max-width: 95%;
+    margin: auto;
+}
+
+.container100 {
+    max-width: 100%;
+    margin: auto;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+/* Theme Setup End */
+
+/* Loader Start */
+
+/* HTML: <div className="loader"></div> */
+.loader {
+    width: 50px;
+    --b: 8px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    padding: 1px;
+    background: conic-gradient(#0000 10%, #f03355) content-box;
+    -webkit-mask:
+        repeating-conic-gradient(#0000 0deg, #000 1deg 20deg, #0000 21deg 36deg),
+        radial-gradient(farthest-side, #0000 calc(100% - var(--b) - 1px), #000 calc(100% - var(--b)));
+    -webkit-mask-composite: destination-in;
+    mask-composite: intersect;
+    animation: l4 1s infinite steps(10);
+}
+
+@keyframes l4 {
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+/* Loader End */
+
+
+/* Responsive Start*/
+
+@media (max-width:768px) {
+
+    section {
+        padding: 30px 0;
+    }
+
+    .container95 {
+        max-width: 90%;
+        margin: auto;
+    }
+}
+
+/* Responsive End*/
