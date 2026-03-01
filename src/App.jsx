@@ -22,7 +22,7 @@ const AppRoutes = () => {
 window.addEventListener('scroll', window.scrollTo(0, 0))
 
 const App = () => {
-  return (<Router>
+  return (<Router basename={import.meta.env.BASE_URL.replace(/\/$/, '') || '/'}>
     <ScrollToTop />
     <AppRoutes />
     <Toaster />

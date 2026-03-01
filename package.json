@@ -1,4 +1,5 @@
 {
+  "homepage": "https://dinesh140499.github.io/make-ias/",
   "name": "make-ias",
   "private": true,
   "version": "0.0.0",
@@ -7,12 +8,15 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview --open /make-ias/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.6.1",
-    "@rollup/rollup-darwin-arm64": "^4.39.0",
     "@tailwindcss/vite": "^4.0.12",
+    "apexcharts": "^4.0.0",
     "axios": "^1.8.4",
     "formik": "^2.4.6",
     "react": "^19.0.0",
@@ -40,7 +44,9 @@
     "eslint": "^9.21.0",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
+    "gh-pages": "^6.3.0",
     "globals": "^15.15.0",
-    "vite": "^6.2.0"
+    "vite": "^6.2.0",
+    "patch-package": "^8.0.0"
   }
 }
